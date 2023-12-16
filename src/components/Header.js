@@ -24,8 +24,8 @@ export default function Header() {
                 <span className="icon-bar"></span>
               </button>
             </div>
-            <div className="menu-navigation navbar-collapse collapse">
-              <ul className="menu-navigation__list nav navbar-nav" >
+            <div className="menu-navigation navbar-collapse collapse ">
+              <ul className="menu-navigation__list nav navbar-nav " >
                 <li className="current">
                   <Link to="/">Home</Link>
                 </li>

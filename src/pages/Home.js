@@ -6,6 +6,7 @@ import Loader from '../components/Loader';
 import Color from '../components/Color';
 
 
+
 export default function Home() {
 
 	return (
@@ -15,28 +16,56 @@ export default function Home() {
 			<Color />
 			<main id="page-content">
 
+				<div class="sezionecane">
+					<h3 class="nomecane">Osso</h3>
 
-				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+					<div class="immaginicane">
+						<img id="foto1" src="assets/images/slider/slide_1.jpg" width="100%" alt="foto1" />
+						<img id="foto2" src="assets/images/slider/slide_2.jpg" width="100%" alt="foto2" />
+						<img id="foto3" src="assets/images/slider/slide_3.jpg" width="100%" alt="foto3" />
+					</div>
+
+					<p class="testocane">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi soluta, dolore! Sed aliquid assumenda exercitationem dolores numquam, at rerum quia, ducimus impedit consequuntur! Rem illo debitis beatae quas modi similique nemo, minima atque natus laborum. Aperiam, rerum et nesciunt ullam?</p>
+				</div>
+
+				{/* <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button className="iconbtn active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+						<button className="iconbtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button className="iconbtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="..." class="d-block w-100" alt="..."/>
+						<div class="carousel-item active" data-bs-interval="4000">
+							<img src="assets/images/slider/slide_1.jpg" className="d-block w-100" alt="..." />
+							<div class="carousel-caption d-none d-md-block text-start">
+								<h2 class="text-white-color">Trusted <br></br>by 5 Million<br></br> Customers<br></br> &amp; Counting</h2>
+								<h5 class="text-white-color">Start your travel planning here!</h5>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="..."/>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="assets/images/slider/slide_2.jpg" className="d-block w-100" alt="..." />
+							<div class="carousel-caption d-none d-md-block text-start">
+								<h2 className="text-white-color">Treat Yourself:<br></br> Book a Luxury<br></br> Car Rental</h2>
+								<h5 className="text-white-color">Luxury Car Rental <br></br>& Chauffeured Cars</h5>
+							</div>
 						</div>
-						<div class="carousel-item">
-							<img src="..." class="d-block w-100" alt="..."/>
+						<div class="carousel-item" data-bs-interval="4000">
+							<img src="assets/images/slider/slide_3.jpg" className="d-block w-100" alt="..." />
+							<div class="carousel-caption d-none d-md-block text-start">
+								<h2 className="text-white-color">Treat Yourself:<br></br> Book a Luxury<br></br> Car Rental</h2>
+								<h5 className="text-white-color">Luxury Car Rental <br></br>& Chauffeured Cars</h5>
+							</div>
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
+					<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+						<span className="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span className="visually-hidden">Previous</span>
 					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="visually-hidden">Next</span>
 					</button>
-				</div>
+				</div> */}
 
 
 				<div className="book-form-box">
@@ -148,43 +177,43 @@ export default function Home() {
 				</div>
 
 
-				<div class="services-box">
-					<div class="container">
-						<div class="box-list-posts swiper-container-services swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="post-column">
-										<figure class="thumbnail"><img  src={"/assets/images/post-sm-img-1.jpg"} alt="" /></figure>
-										<div class="post-column__content">
+				<div className="services-box">
+					<div className="container">
+						<div className="box-list-posts swiper-container-services swiper-container">
+							<div className="swiper-wrapper">
+								<div className="swiper-slide">
+									<div className="post-column">
+										<figure className="thumbnail"><img src={"/assets/images/post-sm-img-1.jpg"} alt="" /></figure>
+										<div className="post-column__content">
 											<h3>Nearest<br></br> Airport Deals</h3>
-											<span class="text-link">Budget Prices for Long <br></br>Term Rentals</span>
-											<Link to="/services" class="btn btn__marker"><i class="icon-arrows"></i></Link>
+											<span className="text-link">Budget Prices for Long <br></br>Term Rentals</span>
+											<Link to="/services" className="btn btn__marker"><i className="icon-arrows"></i></Link>
 										</div>
 									</div>
 								</div>
-								<div class="swiper-slide">
-									<div class="post-column">
-										<figure class="thumbnail"><img src="/assets/images/post-sm-img-2.jpg" alt="" /></figure>
-										<div class="post-column__content">
+								<div className="swiper-slide">
+									<div className="post-column">
+										<figure className="thumbnail"><img src="/assets/images/post-sm-img-2.jpg" alt="" /></figure>
+										<div className="post-column__content">
 											<h3>Online Reservations</h3>
-											<span class="text-link">Search Prices and <br></br>Special Offers</span>
-											<Link to="/services" class="btn btn__marker"><i class="icon-arrows"></i></Link>
+											<span className="text-link">Search Prices and <br></br>Special Offers</span>
+											<Link to="/services" className="btn btn__marker"><i className="icon-arrows"></i></Link>
 										</div>
 
 									</div>
 								</div>
-								<div class="swiper-slide">
-									<div class="post-column">
-										<figure class="thumbnail"><img src="/assets/images/post-sm-img-3.jpg" alt="" /></figure>
-										<div class="post-column__content">
+								<div className="swiper-slide">
+									<div className="post-column">
+										<figure className="thumbnail"><img src="/assets/images/post-sm-img-3.jpg" alt="" /></figure>
+										<div className="post-column__content">
 											<h3>24/7 Road Assistance</h3>
-											<span class="text-link">Road Assistance &amp; Car Replacement</span>
-											<Link to="/services" class="btn btn__marker"><i class="icon-arrows"></i></Link>
+											<span className="text-link">Road Assistance &amp; Car Replacement</span>
+											<Link to="/services" className="btn btn__marker"><i className="icon-arrows"></i></Link>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="swiper-pagination swiper-pagination-services"></div>
+							<div className="swiper-pagination swiper-pagination-services"></div>
 						</div>
 
 					</div>
