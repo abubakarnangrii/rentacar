@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
 import Loader from '../components/Loader';
 import Color from '../components/Color';
+import Carousel from '../components/Carousel';
 
 
 
@@ -15,18 +16,7 @@ export default function Home() {
 			<Loader />
 			<Color />
 			<main id="page-content">
-
-				<div class="sezionecane">
-					<h3 class="nomecane">Osso</h3>
-
-					<div class="immaginicane">
-						<img id="foto1" src="assets/images/slider/slide_1.jpg" width="100%" alt="foto1" />
-						<img id="foto2" src="assets/images/slider/slide_2.jpg" width="100%" alt="foto2" />
-						<img id="foto3" src="assets/images/slider/slide_3.jpg" width="100%" alt="foto3" />
-					</div>
-
-					<p class="testocane">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi soluta, dolore! Sed aliquid assumenda exercitationem dolores numquam, at rerum quia, ducimus impedit consequuntur! Rem illo debitis beatae quas modi similique nemo, minima atque natus laborum. Aperiam, rerum et nesciunt ullam?</p>
-				</div>
+			<Carousel/>
 
 				{/* <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
