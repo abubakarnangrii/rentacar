@@ -167,7 +167,6 @@ export default function Header() {
                 </li>
                 <li>
                   <Link to="/register">Register/Login</Link>
-      
                 </li>
               </ul>
             </div>

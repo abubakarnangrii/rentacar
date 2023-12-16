@@ -4,7 +4,7 @@ export default function Loader() {
      const loader =()=>{
         setTimeout(() => {
             document.querySelector(".plash").style.display = "none";
-        }, 1200);
+        }, 1500);
     };
   return (
     <div>

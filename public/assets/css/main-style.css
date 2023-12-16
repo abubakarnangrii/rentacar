@@ -3116,9 +3116,7 @@ ol.list__numeric li:before {
 .navbar .menu-navigation__list {
   text-transform: uppercase;
   font-size: 16px;
-  
   float: none;
-
 }
 
 @media (min-width: 1200px) {
@@ -3155,8 +3153,6 @@ ol.list__numeric li:before {
   .navbar .menu-navigation__list > li {
     padding: 27px 0 24px;
     margin: 0;
-    
-   
   }
 }
 
@@ -3165,8 +3161,6 @@ ol.list__numeric li:before {
   color: #020202;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   transition: 0.3s;
-  list-style: none;
-  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -7435,7 +7429,7 @@ header.site-header .social-list__icons {
 
 /*
 Skin Name: Nivo Slider Default Theme
-*/
+
 .theme-default .nivoSlider {
   position: relative;
   background: #fff;
@@ -7519,8 +7513,8 @@ Skin Name: Nivo Slider Default Theme
   width: 120px;
   height: auto;
 }
-
-/* nivo-caption text */
+*/
+/* nivo-caption text
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -7565,7 +7559,7 @@ Skin Name: Nivo Slider Default Theme
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
-
+*/
 /*--------------------------------------------------------------
 # Color themes
 --------------------------------------------------------------*/
@@ -8964,7 +8958,7 @@ body.color-turquoise #road {
   width: 46%;
   text-align: center;
   font-size: 4em;
-  background: transparent url(../images/move_car.png) right center no-repeat;
+  background: transparent url('/assets/images/move_car.png') right center no-repeat;
 }
 
 .move_img img {

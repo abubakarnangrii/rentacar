@@ -130,7 +130,7 @@ export default function Home() {
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="post-column">
-										<figure class="thumbnail"><img src="assets/images/post-sm-img-1.jpg" alt="" /></figure>
+										<figure class="thumbnail"><img  src={"/assets/images/post-sm-img-1.jpg"} alt="" /></figure>
 										<div class="post-column__content">
 											<h3>Nearest<br></br> Airport Deals</h3>
 											<span class="text-link">Budget Prices for Long <br></br>Term Rentals</span>
@@ -140,7 +140,7 @@ export default function Home() {
 								</div>
 								<div class="swiper-slide">
 									<div class="post-column">
-										<figure class="thumbnail"><img src="assets/images/post-sm-img-2.jpg" alt="" /></figure>
+										<figure class="thumbnail"><img src="/assets/images/post-sm-img-2.jpg" alt="" /></figure>
 										<div class="post-column__content">
 											<h3>Online Reservations</h3>
 											<span class="text-link">Search Prices and <br></br>Special Offers</span>
@@ -151,7 +151,7 @@ export default function Home() {
 								</div>
 								<div class="swiper-slide">
 									<div class="post-column">
-										<figure class="thumbnail"><img src="assets/images/post-sm-img-3.jpg" alt="" /></figure>
+										<figure class="thumbnail"><img src="/assets/images/post-sm-img-3.jpg" alt="" /></figure>
 										<div class="post-column__content">
 											<h3>24/7 Road Assistance</h3>
 											<span class="text-link">Road Assistance &amp; Car Replacement</span>
