@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Loader from '../components/Loader';
 import Color from '../components/Color';
 import Carousel from '../components/Carousel';
-
+import { CustomSlider } from '../components/Slider';
 
 
 export default function Home() {
@@ -17,47 +17,6 @@ export default function Home() {
 			<Color />
 			<main id="page-content">
 			<Carousel/>
-
-				{/* <div id="carouselExampleDark" class="carousel carousel-white slide" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<button className="iconbtn active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
-						<button className="iconbtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button className="iconbtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="4000">
-							<img src="assets/images/slider/slide_1.jpg" className="d-block w-100" alt="..." />
-							<div class="carousel-caption d-none d-md-block text-start">
-								<h2 class="text-white-color">Trusted <br></br>by 5 Million<br></br> Customers<br></br> &amp; Counting</h2>
-								<h5 class="text-white-color">Start your travel planning here!</h5>
-							</div>
-						</div>
-						<div class="carousel-item" data-bs-interval="4000">
-							<img src="assets/images/slider/slide_2.jpg" className="d-block w-100" alt="..." />
-							<div class="carousel-caption d-none d-md-block text-start">
-								<h2 className="text-white-color">Treat Yourself:<br></br> Book a Luxury<br></br> Car Rental</h2>
-								<h5 className="text-white-color">Luxury Car Rental <br></br>& Chauffeured Cars</h5>
-							</div>
-						</div>
-						<div class="carousel-item" data-bs-interval="4000">
-							<img src="assets/images/slider/slide_3.jpg" className="d-block w-100" alt="..." />
-							<div class="carousel-caption d-none d-md-block text-start">
-								<h2 className="text-white-color">Treat Yourself:<br></br> Book a Luxury<br></br> Car Rental</h2>
-								<h5 className="text-white-color">Luxury Car Rental <br></br>& Chauffeured Cars</h5>
-							</div>
-						</div>
-					</div>
-					<button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-						<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span className="visually-hidden">Previous</span>
-					</button>
-					<button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div> */}
-
-
 				<div className="book-form-box">
 					<div className="container">
 						<div className="row">
@@ -222,93 +181,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
-
-
-			  <section className="carousel-models_fullwidth">
-					<div className="carousel-models_fullwidth__inner">
-						<h1>Our Fleet</h1>
-						<span className="text-link">Great Rental Car Selection. Unbeatable Deals.</span>
-						<div className="swiper-container-models swiper-container">
-							<div className="swiper-wrapper">
-								<div className="model-info swiper-slide">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_2.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Porsche 911 Carrera S</h3>
-										<p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-										<span className="cost">From <strong>230$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-								</div>
-								<div className="model-info swiper-slide">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_1.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Hyundai Santa Fe</h3>
-										<p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-										<span className="cost">From <strong>120$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-								</div>
-								<div className="model-info swiper-slide">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_4.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Hyundai i30</h3>
-										<p>The series II Hyundai i30 is packed with so many individual and unique features we think it could be more you than any other small car.</p>
-										<span className="cost">From <strong>115$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-								</div>
-								<div className="model-info swiper-slide">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_3.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Mercedes-Benz Metris Passenger Van </h3>
-										<p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-										<span className="cost">From <strong>100$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-								</div>
-								<div className="model-info swiper-slide swiper-slide-active">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_1.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Hyundai Santa Fe</h3>
-										<p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-										<span className="cost">From <strong>120$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-
-								</div>
-								<div className="model-info swiper-slide">
-									<figure className="thumbnail">
-										<Link to="/details"><img src={require('../images/car_4.png')} alt="" /></Link>
-									</figure>
-									<div className="model-info__content">
-										<h3>Porsche 911 Carrera S</h3>
-										<p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-										<span className="cost">From <strong>230$</strong> per day</span>
-										<span className="btn btn-model" data-remodal-target="modal">book now</span>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<div className="swiper-pagination-models"></div>
-						<div className="navigation_block">
-							<span className="swiper-button-next"><i className="icon-left-arrow2"></i></span>
-							<span className="swiper-button-prev"><i className="icon-left-arrow"></i></span>
-						</div>
-					</div>
-				</section> 
-
-
+				<CustomSlider/>
 				<section class="service-info-box">
 					<h1>Featured Services</h1>
 					<span class="text-link">More than just a car rental company</span>

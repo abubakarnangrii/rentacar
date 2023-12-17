@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import { Link } from "react-router-dom";
 import Loader from '../components/Loader';
 import Color from '../components/Color';
+import { CustomSlider } from '../components/Slider';
 
 export default function Fleet() {
   return (
@@ -28,80 +29,7 @@ export default function Fleet() {
                       </div>
                   </div>
               </div>
-              <section className="carousel-models_fullwidth">
-                  <div className="carousel-models_fullwidth__inner">
-                      <h1>Featured Cars</h1>
-                      <span className="text-link">Great Rental Car Selection. Unbeatable Deals.</span>
-                      <div className="swiper-container-models swiper-container">
-                          <div className="swiper-wrapper">
-
-                              <div className="model-info swiper-slide">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_2.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Porsche 911 Carrera S</h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>230$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-                              </div>
-                              <div className="model-info swiper-slide">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_1.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Hyundai Santa Fe</h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>120$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-                              </div>
-                              <div className="model-info swiper-slide">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_3.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Mercedes-Benz Metris Passenger Van </h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>115$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-                              </div>
-                              <div className="model-info swiper-slide swiper-slide-active">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_1.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Hyundai Santa Fe</h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>120$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-
-                              </div>
-                              <div className="model-info swiper-slide">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_2.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Porsche 911 Carrera S</h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>230$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-                              </div>
-                              <div className="model-info swiper-slide">
-                                  <figure className="thumbnail"><Link to="/details"><img src="assets/images/car_3.png" alt=""/></Link></figure>
-                                  <div className="model-info__content">
-                                      <h3>Mercedes-Benz Metris Passenger Van </h3>
-                                      <p>To be clear, the Santa Fe Sport is a 5-passenger SUV with two rows of seating, but I am testing the regular Santa Fe that is larger and has three rows of seating.</p>
-                                      <span className="cost">From <strong>100$</strong> per day</span>
-                                      <span className="btn btn-model" data-remodal-target="modal">book now</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div className="swiper-pagination-models"></div>
-                      <div className="navigation_block">
-                          <span className="swiper-button-next"><i className="icon-left-arrow2"></i></span>
-                          <span className="swiper-button-prev"><i className="icon-left-arrow"></i></span>
-                      </div>
-                  </div>
-
-              </section> 
-
-
+              <CustomSlider/>
               <section className="isotop-box">
                   <div className="container">
                       <div className="row">
