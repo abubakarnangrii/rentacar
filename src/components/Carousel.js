@@ -9,7 +9,7 @@ const Carousel = () => {
     };
 
     const prevSlide = () => {
-        setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+        setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
     };
 
     const images = [
