@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
@@ -171,7 +171,7 @@ export default function Home() {
 					<div className="container">
 						<div className="box-list-posts swiper-container-services swiper-container">
 							<div className="swiper-wrapper">
-								<div className="swiper-slide">
+								<div className="swiper-slide_">
 									<div className="post-column">
 										<figure className="thumbnail"><img src={"/assets/images/post-sm-img-1.jpg"} alt="" /></figure>
 										<div className="post-column__content">
@@ -181,7 +181,7 @@ export default function Home() {
 										</div>
 									</div>
 								</div>
-								<div className="swiper-slide">
+								<div className="swiper-slide_">
 									<div className="post-column">
 										<figure className="thumbnail"><img src="/assets/images/post-sm-img-2.jpg" alt="" /></figure>
 										<div className="post-column__content">
@@ -192,7 +192,7 @@ export default function Home() {
 
 									</div>
 								</div>
-								<div className="swiper-slide">
+								<div className="swiper-slide_">
 									<div className="post-column">
 										<figure className="thumbnail"><img src="/assets/images/post-sm-img-3.jpg" alt="" /></figure>
 										<div className="post-column__content">
@@ -213,7 +213,7 @@ export default function Home() {
 				<div className="container">
 					<div className="row info-box">
 						<div className="col-xs-12">
-							<article className="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+							<article className="fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
 								<h1>Start your travel planning here</h1>
 								<span className="text-link">Drive away with more money in your pockets and more time on your itinerary.</span>
 								<Link to="/" className="btn" data-remodal-target="modal">BOOK NOW</Link>
@@ -223,7 +223,8 @@ export default function Home() {
 					</div>
 				</div>
 
-				<section className="carousel-models_fullwidth">
+
+			  <section className="carousel-models_fullwidth">
 					<div className="carousel-models_fullwidth__inner">
 						<h1>Our Fleet</h1>
 						<span className="text-link">Great Rental Car Selection. Unbeatable Deals.</span>
@@ -305,66 +306,68 @@ export default function Home() {
 							<span className="swiper-button-prev"><i className="icon-left-arrow"></i></span>
 						</div>
 					</div>
-				</section>
+				</section> 
 
 
-				<section className="service-info-box">
+				<section class="service-info-box">
 					<h1>Featured Services</h1>
-					<span className="text-link">More than just a car rental company</span>
-					<div className="swiper-container-column swiper-container-column-first swiper-container">
-						<div className="swiper-wrapper">
-							<div className="swiper-slide odd-line">
-								<div className="service-block">
-									<figure className="thumbnail">
-										<Link to="/services-post"><img src={require('../images/service_img_1.jpg')} alt="" /></Link>
-									</figure>
-									<div className="service-block__content">
+					<span class="text-link">More than just a car rental company</span>
+					<div class="swiper-container-column swiper-container-column-first swiper-container">
+						<div class="swiper-wrapper_">
+							<div class="swiper-slide odd-line1">
+								<div class="service-block">
+									
+										<figure class="thumbnail">
+											<Link to="/services-post"><img src="assets/images/service_img_1.jpg" alt=""/></Link>
+										</figure>
+							
+									<div class="service-block__content_">
 										<h3>24 Hour Airport Services</h3>
 										<p>The best and biggest airport transfer company in the city, Airport Transfers is here to provide you with the best one-stop transportation service with minimal fuss and maximum comfort.</p>
-										<Link to="/services-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
+										<Link to="/services-post" class="btn btn__marker"><i class="icon-arrows"></i></Link>
 									</div>
 								</div>
 							</div>
-							<div className="swiper-slide even-line">
-								<div className="service-block">
-									<figure className="thumbnail">
-										<Link to="/services-post"><img src={require('../images/service_img_2.jpg')} alt="" /></Link>
+							<div class="swiper-slide even-line1">
+								<div class="service-block">
+									<figure class="thumbnail">
+										<Link to="/services-post"><img src="assets/images/service_img_2.jpg" alt=""/></Link>
 									</figure>
-									<div className="service-block__content">
+									<div class="service-block__content_">
 										<h3>Corporate Meetings &amp; Events</h3>
 										<p>Does your company have employees or clients who frequently rent in the Los Angeles area? Setting up a corporate account allowsus to pre-deliver vehicles to hotels, offices, residences.</p>
-										<Link to="/services-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
+										<Link to="/services-post" class="btn btn__marker"><i class="icon-arrows"></i></Link>
 									</div>
 								</div>
 							</div>
-							<div className="swiper-slide odd-line">
-								<div className="service-block">
-									<figure className="thumbnail">
-										<Link to="/services-post"><img src={require('../images/service_img_3.jpg')} alt="" /></Link>
+							<div class="swiper-slide odd-line2">
+								<div class="service-block">
+									<figure class="thumbnail">
+										<Link to="/services-post"><img src="assets/images/service_img_3.jpg" alt=""/></Link>
 									</figure>
-									<div className="service-block__content">
+									<div class="service-block__content_">
 										<h3>Business Travel</h3>
 										<p>We offer professional drivers who can chauffeur you to any destination you choose. Or ask for a type of tour or drive you are in the mood for and let us do the rest. </p>
-										<Link to="/services-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
+										<Link to="/services-post" class="btn btn__marker"><i class="icon-arrows"></i></Link>
 									</div>
 								</div>
 							</div>
-							<div className="swiper-slide even-line">
-								<div className="service-block">
-									<figure className="thumbnail">
-										<Link to="/services-post"><img src={require('../images/service_img_4.jpg')} alt="" /></Link>
+							<div class="swiper-slide even-line2">
+								<div class="service-block">
+									<figure class="thumbnail">
+										<Link to="/services-post"><img src="assets/images/service_img_4.jpg" alt=""/></Link>
 									</figure>
-									<div className="service-block__content">
+									<div class="service-block__content_">
 										<h3>Private Tours</h3>
 										<p>Huge discounts. Free Delivery and Pickup. Free Car washes. Free upgrades. Free maintenance. We offer amazing deals on car rental rates. Give us a call we make it easy and affordable.</p>
-										<Link to="/services-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
+										<Link to="/services-post" class="btn btn__marker"><i class="icon-arrows"></i></Link>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="swiper-pagination swiper-pagination-services-second"></div>
-					<Link to="/services" className="btn">MORE SERVICES</Link>
+					<div class="swiper-pagination swiper-pagination-services-second"></div>
+					<Link to="/services" class="btn">MORE SERVICES</Link>
 				</section>
 
 				<section className="testimonials-carousel_box">
@@ -373,7 +376,7 @@ export default function Home() {
 						<span className="text-link">What our clients say about us</span>
 						<div className="swiper-container-blockquote swiper-container">
 							<div className="swiper-wrapper">
-								<div className="swiper-slide">
+								<div className="swiper-slide__">
 									<article className="block_tesimonial">
 										<blockquote>
 											<div className="inner_blockquote">
@@ -389,7 +392,7 @@ export default function Home() {
 										</blockquote>
 									</article>
 								</div>
-								<div className="swiper-slide">
+								<div className="swiper-slide__">
 									<article className="block_tesimonial">
 										<blockquote>
 											<div className="inner_blockquote">
@@ -403,55 +406,20 @@ export default function Home() {
 												</div>
 											</div>
 										</blockquote>
-
-									</article>
-								</div>
-								<div className="swiper-slide">
-									<article className="block_tesimonial">
-										<blockquote>
-											<div className="inner_blockquote">
-												<div className="wrapper">
-													<p>Great Service, Absolutely Terrific staff, extremely professional!!! This was my first ever Car Renting experience, Awesome!!</p>
-													<span className="author_info">
-														<img src={require('../images/author_img_2.png')} alt="" />
-														<span className="name"><Link to="/">James Knudsen</Link></span>
-														<span className="position">Regular Customer</span>
-													</span>
-												</div>
-											</div>
-										</blockquote>
-									</article>
-								</div>
-								<div className="swiper-slide">
-									<article className="block_tesimonial">
-										<blockquote>
-											<div className="inner_blockquote">
-												<div className="wrapper">
-													<p>Im really impressed with your staff at all moosa branch, patricia. She has sevice minded, be attentive, proactive. I think you have a very value staff with you.</p>
-													<span className="author_info">
-														<img src={require('../images/author_img_3.png')} alt="" />
-														<span className="name"><Link to="/">Bruce Justice</Link></span>
-														<span className="position">Regular Customer</span>
-													</span>
-												</div>
-											</div>
-										</blockquote>
 									</article>
 								</div>
 							</div>
 						</div>
-						<div className="swiper-pagination swiper-pagination-blockquote"></div>
-						<span className="swiper-button-next1"><i className="icon-left-arrow2"></i></span>
-						<span className="swiper-button-prev1"><i className="icon-left-arrow"></i></span>
 					</div>
 				</section>
+
 				<section className="blog-posts-carousel">
 					<div className="container">
 						<h1>From the Blog</h1>
 						<span className="text-link">Our latest news and events</span>
 						<div className="swiper-container swiper-container-blog">
 							<div className="swiper-wrapper">
-								<div className="swiper-slide post-item">
+								<div className="swiper__slide post-item">
 									<div className="post-item__inner">
 										<figure className="thumbnail">
 											<img src={require('../images/item_img-1.jpg')} alt="" />
@@ -463,7 +431,7 @@ export default function Home() {
 										</div>
 									</div>
 								</div>
-								<div className="swiper-slide post-item">
+								<div className="swiper__slide post-item">
 									<div className="post-item__inner">
 										<figure className="thumbnail">
 											<img src={require('../images/item_img-2.jpg')} alt="" />
@@ -475,43 +443,7 @@ export default function Home() {
 										</div>
 									</div>
 								</div>
-								<div className="swiper-slide post-item">
-									<div className="post-item__inner">
-										<figure className="thumbnail">
-											<img src={require('../images/item_img-3.jpg')} alt="" />
-										</figure>
-										<div className="post-item__content">
-											<span className="date">12 February, 2017</span>
-											<h4>Finding Cheap Rental Cars</h4>
-											<Link to="/single-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
-										</div>
-									</div>
-								</div>
-								<div className="swiper-slide post-item">
-									<div className="post-item__inner">
-										<figure className="thumbnail">
-											<img src={require('../images/item_img-1.jpg')} alt="" />
-										</figure>
-										<div className="post-item__content">
-											<span className="date">10 February, 2017</span>
-											<h4>Finding Cheap Rental Cars</h4>
-											<Link to="/single-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
-										</div>
-									</div>
-								</div>
-								<div className="swiper-slide post-item">
-									<div className="post-item__inner">
-										<figure className="thumbnail">
-											<img src={require('../images/item_img-2.jpg')} alt="" />
-										</figure>
-										<div className="post-item__content">
-											<span className="date">11 February, 2017</span>
-											<h4>19 ways to save money on rental cars</h4>
-											<Link to="/single-post" className="btn btn__marker"><i className="icon-arrows"></i></Link>
-										</div>
-									</div>
-								</div>
-								<div className="swiper-slide post-item">
+								<div className="swiper__slide post-item">
 									<div className="post-item__inner">
 										<figure className="thumbnail">
 											<img src={require('../images/item_img-3.jpg')} alt="" />
@@ -526,10 +458,9 @@ export default function Home() {
 							</div>
 							<div className="swiper-pagination swiper-pagination-blog"></div>
 						</div>
-						<span className="swiper-button-next2 swiper-button-next"><i className="icon-left-arrow2"></i></span>
-						<span className="swiper-button-prev2 swiper-button-prev"><i className="icon-left-arrow"></i></span>
 					</div>
 				</section>
+
 				<div className="container">
 					<div className="row">
 						<div className="col-sm-12">
