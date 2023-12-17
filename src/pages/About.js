@@ -81,33 +81,33 @@ export default function About() {
               <div className="info-box_with-background">
                   <div className="container">
                       <div className="row">
-                          <div className="col-sm-12">
+                          <div className="col-sm-12 heading___">
                               <h1>Why Choose Us</h1>
                               <span className="text-link">Committed to give customer a delightful renting experience</span>
                           </div>
                           <div className="col-xs-12 col-sm-6 col-lg-6">
-                              <div className="block-icon">
+                              <div className="block-icon heading___">
                                   <i className="icon-check-mark"></i>
                                   <span>Express pick-up service available</span>
                                   <p>Visit your selected locations with ease and at your pace with a cheap rental car in USA. </p>
                               </div>
                           </div>
                           <div className="col-xs-12 col-sm-6 col-lg-6">
-                              <div className="block-icon">
+                              <div className="block-icon heading___">
                                   <i className="icon-check-mark"></i>
                                   <span>Short and long term car rental</span>
                                   <p>Whether you're looking for a short-term rental to tour USA or a month-long rent-a-car solution. </p>
                               </div>
                           </div>
                           <div className="col-xs-12 col-sm-6 col-lg-6">
-                              <div className="block-icon">
+                              <div className="block-icon heading___">
                                   <i className="icon-check-mark"></i>
                                   <span>New, comfortable rental car fleet</span>
                                   <p>Visit your selected locations with ease and at your pace with a cheap rental car in USA. </p>
                               </div>
                           </div>
                           <div className="col-xs-12 col-sm-6 col-lg-6">
-                              <div className="block-icon">
+                              <div className="block-icon heading___">
                                   <i className="icon-check-mark"></i>
                                   <span>Award winning car rental company</span>
                                   <p>There's definitely no reason to beg, and borrow or steal a car when renting a car in the USA. </p>

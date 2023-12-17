@@ -10859,3 +10859,15 @@ table.icons tr td:first-child {
     width: 550px;
     margin: 0px 14px;
  }
+ .heading___ h1{
+      color: #000000;
+      font-weight: 600;
+ }
+
+ .heading___ span{
+    color: #2990d6;
+    font-weight: 400;
+ }
+ .heading___ p {
+   color: #000000;
+ }

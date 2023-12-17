@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mobile-top-panel"></div>
       <div className="mobile-top-panel__fixed">
         <div className="container">
-          <div className="navbar navbar-default navbar-fixed-top"  role="navigation" >
+          <div className="navbar navbar-default navbar-fixed-top fixed"  role="navigation" >
             <div className="navbar-header">
               <button  type="button" className="navbar-toggle"  data-toggle="collapse"  data-target=".navbar-collapse" >
                 <span className="sr-only">Toggle navigation</span>
