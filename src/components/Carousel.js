@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Carousel.css'; // Import your CSS file
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

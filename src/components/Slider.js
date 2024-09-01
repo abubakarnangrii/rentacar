@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import "./Slider.css";
 
 export const CustomSlider = () => {
@@ -29,7 +30,7 @@ export const CustomSlider = () => {
         <div className="slider-container">
             <h1 >Our Fleet</h1>
             <span className="text-link">Great Rental Car Selection. Unbeatable Deals.</span>
-            <Slider dots={false} infinite speed={1400} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={2000}>
+            {/* <Slider dots={false} infinite speed={1400} slidesToShow={1} slidesToScroll={1} autoplay autoplaySpeed={2000}>
                 
                 {slides.map((slide, index) => (
                     <div key={index}>
@@ -40,7 +41,7 @@ export const CustomSlider = () => {
                         <img className="imggg" src={slide.img} alt={`car`} />
                     </div>
                 ))}
-            </Slider>
+            </Slider> */}
         </div>
     );
 };
